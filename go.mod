@@ -1,3 +1,3 @@
-module github.com/olteffe/GrokkingAlgorithms
+module GrokkingAlgorithms
 
 go 1.17

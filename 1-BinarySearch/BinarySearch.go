@@ -22,7 +22,17 @@ func BinarySearch(list []int, item int) (pos int) {
 	return
 }
 
+func SerialSearch(list []int, item int) (pos int) {
+	for idx, value := range list {
+		if value == item {
+			return idx
+		}
+	}
+	return -1
+}
+
 func main() {
 	myList := []int{0, 1, 3, 5, 7, 9}
 	fmt.Println(BinarySearch(myList, 3))
+	fmt.Println(SerialSearch(myList, 3))
 }
