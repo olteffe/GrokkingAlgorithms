@@ -1,0 +1,42 @@
+goos: linux
+goarch: amd64
+pkg: GrokkingAlgorithms/1-BinarySearch
+cpu: AMD Ryzen 5 2600 Six-Core Processor            
+BenchmarkBinarySearch100-12     	1000000000	         0.8285 ns/op	       0 B/op	       0 allocs/op
+BenchmarkBinarySearch100k-12    	1000000000	         0.8183 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSerialSearch100-12     	24586726	         46.30 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSerialSearch100k-12    	37052	             28347 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	GrokkingAlgorithms/1-BinarySearch	5.256s
+goos: linux
+goarch: amd64
+pkg: GrokkingAlgorithms/2-SelectionSort
+cpu: AMD Ryzen 5 2600 Six-Core Processor            
+BenchmarkSelectionSort/size=100-12         	   83508	     15619 ns/op	    2040 B/op	       8 allocs/op
+BenchmarkSelectionSort/size=100k-12        	       1	4437113872 ns/op	 4654336 B/op	      30 allocs/op
+BenchmarkGoSort/size=100-12                	  526633	      2021 ns/op	      24 B/op	       1 allocs/op
+BenchmarkGoSort/size=100k-12               	     256	   4618275 ns/op	      24 B/op	       1 allocs/op
+PASS
+ok  	GrokkingAlgorithms/2-SelectionSort	8.949s
+goos: linux
+goarch: amd64
+pkg: GrokkingAlgorithms/3-Factorial
+cpu: AMD Ryzen 5 2600 Six-Core Processor            
+BenchmarkFactorialRecursive/n=100-12         	 5650465	     184.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFactorialRecursive/n=10k-12         	   65655	     18000 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFactorialIterative/n=100-12         	29350712	     40.66 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFactorialIterative/n=10k-12         	  428391	      2702 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	GrokkingAlgorithms/3-Factorial	7.678s
+goos: linux
+goarch: amd64
+pkg: GrokkingAlgorithms/4-QuickSort
+cpu: AMD Ryzen 5 2600 Six-Core Processor            
+BenchmarkQuickSortStruct/size=100-12         	    1712	    786707 ns/op	   20840 B/op	     375 allocs/op
+BenchmarkQuickSortStruct/size=100k-12        	       1	1179740704 ns/op	75733640 B/op	  384101 allocs/op
+BenchmarkQuickSortSlice/size=100-12          	     771	   1505658 ns/op	  108833 B/op	     731 allocs/op
+BenchmarkQuickSortSlice/size=100k-12         	       1	1331357386 ns/op	75788144 B/op	  385430 allocs/op
+BenchmarkGoSort/size=100-12                  	  595482	      2097 ns/op	      24 B/op	       1 allocs/op
+BenchmarkGoSort/size=100k-12                 	     240	   4412823 ns/op	      24 B/op	       1 allocs/op
+PASS
+ok  	GrokkingAlgorithms/4-QuickSort	8.608s
